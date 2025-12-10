@@ -1,0 +1,10 @@
+{
+    "name": "puppeteer-lambda",
+    "version": "1.0.0",
+    "description": "HTML to PNG converter using Puppeteer on AWS Lambda",
+    "main": "index.js",
+    "dependencies": {
+        "@sparticuz/chromium": "^143.0.0",
+        "puppeteer-core": "^24.32.1"
+    }
+}
