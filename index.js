@@ -39,7 +39,7 @@ exports.handler = async (event) => {
         });
         
         // Wait a bit for animations/fonts to load
-        await page.waitForTimeout(1000);
+        await new Promise(res => setTimeout(res, 10000));
         
         // Take screenshot
         const screenshot = await page.screenshot({
