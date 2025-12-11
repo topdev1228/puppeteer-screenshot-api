@@ -28,8 +28,8 @@ exports.handler = async (event) => {
         
         // Set viewport for consistent rendering
         await page.setViewport({
-            width: 2400,
-            height: 3600,
+            width: 4800,
+            height: 7364,
             deviceScaleFactor: 2
         });
         
