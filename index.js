@@ -26,10 +26,10 @@ exports.handler = async (event) => {
         
         const page = await browser.newPage();
         
-        // Set viewport for consistent rendering
+        // Viewport optimized for 800px HTML content with proper scaling
         await page.setViewport({
-            width: 2400,
-            height: 3600,
+            width: 1200,
+            height: 2400,
             deviceScaleFactor: 2
         });
         
@@ -38,7 +38,7 @@ exports.handler = async (event) => {
             waitUntil: ['networkidle0', 'domcontentloaded']
         });
         
-        // Wait a bit for animations/fonts to load
+        // Wait for fonts and rendering to complete
         await new Promise(res => setTimeout(res, 1000));
         
         // Take screenshot
