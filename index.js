@@ -28,8 +28,8 @@ exports.handler = async (event) => {
         
         // Viewport optimized for 800px HTML content with proper scaling
         await page.setViewport({
-            width: 1200,
-            height: 2400,
+            width: 2400,
+            height: 3600,
             deviceScaleFactor: 2
         });
         
